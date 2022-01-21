@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+my:
+  server:
+    port: 8080
+    url: http://localhost:${my.server.port}
+  client:
+    name: client1

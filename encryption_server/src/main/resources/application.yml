@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:${my.postgres.port}/server
+    username: postgres
+    password: pass
+  jpa:
+    hibernate:
+      # Automatically create the PostgreSQL tables
+      ddl-auto: update
+
+key:
+  public: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCYQYM3FwZuQNLK7xRbuBbAcviy1vl9LB//Ubz+NFSBjgrrGNPwqgOuWF1qskBOY0AnoAZpwHlWEryvtz1OGNX5q9boqrhOrGQebJfek9JGvjysz3+KCqAIup8C1Enp4+cUxYy7BRorjF6wqTAjyJn/SQVZPPUyVeN17Nw0jSqI9QIDAQAB
+
+my:
+  message: Salutare!
+  postgres:
+    port: 5432
+
+  # Don't include the stack trace in the exception response
+server:
+  error:
+    include-stacktrace: never
